@@ -29,6 +29,11 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './',
+    port: 8081
+  },
 
   ///////////  uncomment this for production ////////////////
   // plugins: [
@@ -42,6 +47,6 @@ module.exports = {
   //   })
   // ],////////////////////////////////////////////////////////
 
-  watch: false // change this to true to keep webpack running
+  watch: true // change this to true to keep webpack running
 };
 
